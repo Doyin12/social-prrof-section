@@ -1,0 +1,384 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  color: #fff;
+  background: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+main {
+  width: 80%;
+  margin: 9rem auto;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 90%;
+    margin: 7rem auto;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+}
+
+.heading-3 {
+  color: #502050;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .heading-3 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heading-3 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+.heading-3-white {
+  opacity: 90%;
+}
+
+.service {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #937b92;
+}
+
+@media screen and (max-width: 375px) {
+  .service {
+    text-align: center;
+  }
+}
+
+.ratings {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ratings {
+    margin-top: 4rem;
+  }
+}
+
+.ratings__text {
+  font-size: 1.3rem;
+  color: #502050;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings__text {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ratings__text {
+    margin-left: 0;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+.ratings__text img {
+  height: 1.2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings__text img {
+    height: 2rem;
+  }
+}
+
+.ratings__1 {
+  position: relative;
+  right: 8rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings__1 {
+    display: inline-block;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ratings__1 {
+    right: 0;
+  }
+}
+
+.ratings__2 {
+  position: relative;
+  right: 4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings__2 {
+    display: inline-block;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ratings__2 {
+    right: 0;
+  }
+}
+
+.ratings__3 {
+  position: relative;
+  right: 0rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .ratings__3 {
+    display: inline-block;
+    right: 0;
+  }
+}
+
+.customer-rating {
+  background: #f7f2f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .customer-rating {
+    padding: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .customer-rating {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: .7;
+  }
+}
+
+.verified {
+  color: #ee68a4;
+  opacity: 80%;
+  margin-top: .5rem;
+  font-weight: 500;
+}
+
+.profile-box__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: 4rem auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile-box__details {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.profile-box__img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.box {
+  background-color: #502050;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 1100px) {
+  .box {
+    width: 80%;
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .box {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.box-2 {
+  margin-left: 3rem;
+  position: relative;
+  top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .box-2 {
+    top: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .box-2 {
+    margin-left: 0;
+    top: 0;
+  }
+}
+
+.box-3 {
+  margin-left: 3rem;
+  position: relative;
+  top: 4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .box-3 {
+    top: 0;
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .box-3 {
+    margin-left: 0;
+    top: 0;
+  }
+}
+
+.testimonials {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  opacity: 80%;
+  width: 80%;
+  margin: 2.5rem auto;
+  line-height: 2.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: -10rem;
+}
+
+@media screen and (max-width: 375px) {
+  .attribution {
+    bottom: -5rem;
+    text-align: start;
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

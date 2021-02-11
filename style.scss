@@ -1,0 +1,296 @@
+@import './media__queries';
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    color: #fff;
+
+    background: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+
+    @include phone {
+        background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+main {
+    width: 80%;
+    margin: 9rem auto;
+    
+    @include phone {
+        width: 90%;
+        margin: 7rem auto;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tab-land {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: none;
+        text-align: center;
+    }
+
+    @include phone {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: none;
+    }
+}
+
+
+.heading-3 {
+    color: hsl(300, 43%, 22%);
+    font-size: 5rem;
+
+    @include tab-land {
+        font-size: 4rem;
+    }
+
+    @include phone {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    &-white {
+        opacity: 90%;
+    }
+}
+
+.service {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: hsl(303, 10%, 53%);
+
+
+    @include phone {
+        text-align: center;
+    }
+}
+
+.ratings {
+    display: inline-block;
+
+    @include tab-land {
+        margin-top: 4rem;
+     }
+
+    @include phone {
+        margin-top: 4rem;
+     }
+
+    &__text {
+        font-size: 1.3rem;;
+        color: hsl(300, 43%, 22%);
+        margin-left: 3rem;
+
+        @include tab-land {
+           font-size: 1.7rem;
+         }
+
+       @include phone {
+        margin-left: 0;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+     }
+
+        img {
+            height: 1.2rem;
+
+            @include tab-land {
+                height: 2rem;
+              }
+        }
+    }
+
+    &__1 {
+        position: relative;
+        right: 8rem ;
+
+        @include tab-land {
+            display: inline-block;
+            right: 0;
+        }
+
+        @include phone {
+           right: 0;
+        }
+    }
+
+    &__2 {
+        position: relative;
+        right: 4rem ;
+        
+        @include tab-land {
+            display: inline-block;
+            right: 0;
+        }
+        
+        @include phone {
+            right: 0;
+         }
+    }
+
+    &__3 {
+        position: relative;
+        right: 0rem ;
+
+        @include tab-land {
+            display: inline-block;
+            right: 0;
+        }
+    }
+}
+
+.customer-rating {
+    background: hsl(300, 24%, 96%);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    align-items: center;
+
+    @include tab-land {
+        padding: 1.3rem;
+    }
+
+    @include phone {
+       flex-direction: column;
+       padding: .7 ;
+     }
+    
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    opacity: 80%;
+    margin-top: .5rem;
+    font-weight: 500;
+}
+
+.profile-box {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 4rem auto 0;
+        flex-wrap: wrap;
+    }
+
+    &__details {
+        margin-left: 2rem;
+        font-size: 1.4rem;
+    }
+
+    &__img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+}
+
+.boxes {
+    display: flex;
+
+    @include tab-land {
+        flex-direction: column;
+    }
+
+    @include phone {
+        flex-direction: column;
+     }
+}
+
+.box {
+    background-color: hsl(300, 43%, 22%);
+    margin-top: 5rem;
+    border-radius: 2rem;
+    width: 33.3%;
+
+    @include tab-land {
+        width: 80%;
+        margin: 5rem auto;
+    }
+
+    @include phone {
+       width: 100%;
+       margin-top: 2rem;
+     }
+
+    &-2 {
+        margin-left: 3rem;
+        position: relative;
+        top: 2rem;
+
+        @include tab-land {
+            top: 0;
+            margin: 0 auto;
+        }
+
+        @include phone {
+            margin-left: 0;
+            top: 0;
+         }
+    }
+
+    &-3 {
+        margin-left: 3rem;
+        position: relative;
+        top: 4rem;
+
+        @include tab-land {
+            top: 0;
+            margin: 5rem auto;
+        }
+
+        @include phone {
+          margin-left: 0;
+          top: 0;
+         }
+    }
+}
+
+.testimonials {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:  hsl(0, 0%, 100%);
+    opacity: 80%;
+    width: 80%;
+    margin: 2.5rem auto;
+    line-height: 2.3rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: -10rem;
+
+    @include phone {
+        bottom: -5rem;
+        text-align: start;
+     }
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
